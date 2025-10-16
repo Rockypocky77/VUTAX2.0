@@ -239,3 +239,69 @@ grafana_data/
 postgres_data/
 redis_data/
 ml_models/
+
+# ==========================================
+# ML/AI DATA STORAGE - PREVENT GITHUB PUSH
+# ==========================================
+
+# Large model files and databases
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.model
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.pb
+*.tflite
+*.onnx
+
+# Data storage directories
+data/market_data/
+data/models/
+data/cache/
+data/logs/
+!data/.gitkeep
+!data/stock_symbols.csv
+
+# ML service data directories
+backend/ml-service/data/
+backend/ml-service/models/saved/
+backend/ml-service/cache/
+backend/ml-service/logs/
+!backend/ml-service/data/.gitkeep
+!backend/ml-service/models/.gitkeep
+!backend/ml-service/models/saved/.gitkeep
+
+# Large CSV files (market data)
+*_market_data.csv
+*_stock_data.csv
+*_historical_data.csv
+*_training_data.csv
+
+# Compressed data files
+*.gz
+*.zip
+*.tar
+*.tar.gz
+*.bz2
+*.7z
+
+# Training checkpoints and logs
+checkpoints/
+training_logs/
+tensorboard_logs/
+wandb/
+
+# Large JSON data files
+*_data.json
+market_*.json
+stock_*.json
+training_*.json
+
+# Cache directories
+.cache/
+cache/
