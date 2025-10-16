@@ -1,0 +1,32 @@
+{
+  "name": "vutax-2.0",
+  "version": "1.0.0",
+  "description": "Fintech platform for short-term investors",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend/api-gateway"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\" \"npm run dev:ml\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend/api-gateway && npm run dev",
+    "dev:ml": "cd backend/ml-service && python -m uvicorn main:app --reload --port 8001",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend/api-gateway && npm run build",
+    "start": "npm run start:frontend & npm run start:backend & npm run start:ml",
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend/api-gateway && npm start",
+    "start:ml": "cd backend/ml-service && python -m uvicorn main:app --port 8001",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend/api-gateway && npm install",
+    "setup:ml": "cd backend/ml-service && pip install -r requirements.txt"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
