@@ -85,6 +85,25 @@ services:
       - vutax-network
     restart: unless-stopped
 
+  # Training Progress Tracker (Flask)
+  training-tracker:
+    build:
+      context: ./backend/training-tracker
+      dockerfile: Dockerfile
+    container_name: vutax-training-tracker
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+      - ML_SERVICE_URL=http://ml-service:8001
+    volumes:
+      - ./backend/training-tracker:/app
+    depends_on:
+      - ml-service
+    networks:
+      - vutax-network
+    restart: unless-stopped
+
   # Frontend (Next.js) - Development
   frontend:
     build:

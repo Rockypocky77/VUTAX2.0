@@ -18,6 +18,7 @@ from models.chatbot_model import ChatbotModel
 from services.data_service import DataService
 from services.prediction_service import PredictionService
 from services.sentiment_service import SentimentService
+from services.auto_trainer import AutoTrainer
 from utils.logger import setup_logger
 from schemas.requests import (
     StockAnalysisRequest,
@@ -42,11 +43,12 @@ chatbot_model: ChatbotModel = None
 data_service: DataService = None
 prediction_service: PredictionService = None
 sentiment_service: SentimentService = None
+auto_trainer: AutoTrainer = None
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Startup and shutdown events"""
-    global analytical_model, chatbot_model, data_service, prediction_service, sentiment_service
+    global analytical_model, chatbot_model, data_service, prediction_service, sentiment_service, auto_trainer
     
     logger.info("🚀 Starting VUTAX ML Service...")
     
@@ -66,6 +68,11 @@ async def lifespan(app: FastAPI):
         
         # Initialize prediction service
         prediction_service = PredictionService(analytical_model, data_service)
+        
+        # Initialize auto trainer
+        logger.info("Initializing auto trainer...")
+        auto_trainer = AutoTrainer()
+        await auto_trainer.initialize()
         
         logger.info("✅ All models and services initialized successfully")
         
@@ -249,6 +256,8 @@ async def get_model_status():
     """
     Get status of all ML models
     """
+    training_status = auto_trainer.get_training_status() if auto_trainer else {}
+    
     return {
         "analytical_model": {
             "loaded": analytical_model is not None,
@@ -261,8 +270,34 @@ async def get_model_status():
             "ready": chatbot_model.is_ready() if chatbot_model else False,
             "last_trained": chatbot_model.last_trained if chatbot_model else None
         },
+        "training_status": training_status,
         "timestamp": datetime.utcnow()
     }
+
+@app.get("/training/status")
+async def get_training_status():
+    """
+    Get current training status
+    """
+    if not auto_trainer:
+        raise HTTPException(status_code=503, detail="Auto trainer not initialized")
+    
+    return auto_trainer.get_training_status()
+
+@app.post("/training/start")
+async def start_training(model_type: str = "analytical"):
+    """
+    Start training for specified model type
+    """
+    if not auto_trainer:
+        raise HTTPException(status_code=503, detail="Auto trainer not initialized")
+    
+    try:
+        await auto_trainer.force_training(model_type)
+        return {"message": f"Training started for {model_type} model", "timestamp": datetime.utcnow()}
+    except Exception as e:
+        logger.error(f"Error starting training: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 async def background_model_updates():
     """Background task for periodic model updates"""
