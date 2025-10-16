@@ -9,7 +9,7 @@ import json
 import os
 import threading
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 import requests
 import logging
 from typing import Dict, Any, List
@@ -26,10 +26,11 @@ socketio = SocketIO(app, cors_allowed_origins="*")
 training_status = {
     'is_training': False,
     'progress': 0.0,
-    'current_stage': '',
+    'current_stage': 'idle',
     'model_type': '',
     'start_time': None,
     'estimated_completion': None,
+    'eta_minutes': 0,
     'logs': [],
     'metrics': {
         'analytical_model': {
@@ -50,6 +51,82 @@ training_status = {
 # ML Service URL
 ML_SERVICE_URL = os.getenv('ML_SERVICE_URL', 'http://localhost:8001')
 
+def monitor_ml_service():
+    """Monitor ML service for training updates"""
+    while True:
+        try:
+            response = requests.get(f"{ML_SERVICE_URL}/training/status", timeout=5)
+            if response.status_code == 200:
+                ml_status = response.json()
+                
+                # Update training status
+                if ml_status.get('is_training', False):
+                    progress = ml_status.get('progress', 0)
+                    stage = ml_status.get('current_stage', 'training')
+                    
+                    # Calculate ETA
+                    eta_minutes = 0
+                    if progress > 0:
+                        # Rough estimate: 30 minutes total training time
+                        remaining_progress = 100 - progress
+                        eta_minutes = int((remaining_progress / 100) * 30)
+                    
+                    training_status.update({
+                        'is_training': True,
+                        'progress': progress,
+                        'current_stage': stage,
+                        'model_type': ml_status.get('model_type', 'analytical'),
+                        'eta_minutes': eta_minutes,
+                        'estimated_completion': (datetime.now() + timedelta(minutes=eta_minutes)).strftime('%H:%M') if eta_minutes > 0 else None
+                    })
+                    
+                    # Add log entry
+                    log_message = get_stage_message(stage, progress)
+                    if not training_status['logs'] or training_status['logs'][-1]['message'] != log_message:
+                        training_status['logs'].append({
+                            'timestamp': datetime.now().strftime('%H:%M:%S'),
+                            'stage': stage,
+                            'progress': progress,
+                            'message': log_message
+                        })
+                        
+                        # Keep only last 50 logs
+                        if len(training_status['logs']) > 50:
+                            training_status['logs'] = training_status['logs'][-50:]
+                    
+                    socketio.emit('training_update', training_status)
+                else:
+                    if training_status['is_training']:
+                        # Training just finished
+                        training_status.update({
+                            'is_training': False,
+                            'progress': 100,
+                            'current_stage': 'completed',
+                            'eta_minutes': 0,
+                            'estimated_completion': None
+                        })
+                        socketio.emit('training_update', training_status)
+            
+            time.sleep(3)  # Check every 3 seconds
+            
+        except Exception as e:
+            logger.debug(f"ML service monitoring error: {e}")
+            time.sleep(10)  # Wait longer on error
+
+def get_stage_message(stage, progress):
+    """Get human-readable message for current stage"""
+    messages = {
+        'collecting_data': f'📊 Collecting training data... ({progress:.1f}%)',
+        'feature_engineering': f'🔧 Engineering features... ({progress:.1f}%)',
+        'training': f'🤖 Training model... ({progress:.1f}%)',
+        'validation': f'✅ Validating model... ({progress:.1f}%)',
+        'deployment': f'🚀 Deploying model... ({progress:.1f}%)',
+        'completed': '🎉 Training completed successfully!',
+        'error': '❌ Training failed',
+        'idle': '💤 Ready to start training...'
+    }
+    return messages.get(stage, f'Processing... ({progress:.1f}%)')
+
 @app.route('/')
 def index():
     """Main dashboard page"""
@@ -64,210 +141,79 @@ def get_status():
 def start_training():
     """Start training for specified model"""
     try:
-        data = request.get_json()
+        data = request.get_json() or {}
         model_type = data.get('model_type', 'analytical')
         
         if training_status['is_training']:
             return jsonify({'error': 'Training already in progress'}), 400
         
-        # Start training in background thread
-        training_thread = threading.Thread(
-            target=trigger_ml_training,
-            args=(model_type,),
-            daemon=True
-        )
-        training_thread.start()
+        # Send request to ML service
+        response = requests.post(f"{ML_SERVICE_URL}/training/start", 
+                               json={'model_type': model_type}, 
+                               timeout=10)
         
-        return jsonify({'message': f'Training started for {model_type} model'})
-        
+        if response.status_code == 200:
+            training_status.update({
+                'start_time': datetime.now().isoformat(),
+                'model_type': model_type,
+                'logs': []
+            })
+            return jsonify({'success': True, 'message': f'Started training {model_type} model'})
+        else:
+            return jsonify({'success': False, 'message': 'Failed to start training'}), 500
+            
     except Exception as e:
         logger.error(f"Error starting training: {e}")
-        return jsonify({'error': str(e)}), 500
-
-@app.route('/api/stop-training', methods=['POST'])
-def stop_training():
-    """Stop current training (if possible)"""
-    try:
-        # In a real implementation, this would send a stop signal to the ML service
-        training_status['is_training'] = False
-        training_status['progress'] = 0.0
-        training_status['current_stage'] = 'Training stopped'
-        
-        # Emit update to connected clients
-        socketio.emit('training_update', training_status)
-        
-        return jsonify({'message': 'Training stop requested'})
-        
-    except Exception as e:
-        logger.error(f"Error stopping training: {e}")
-        return jsonify({'error': str(e)}), 500
+        return jsonify({'success': False, 'message': str(e)}), 500
 
 @app.route('/api/logs')
 def get_logs():
     """Get training logs"""
-    return jsonify({'logs': training_status['logs']})
+    return jsonify(training_status['logs'])
 
 @app.route('/api/metrics')
 def get_metrics():
-    """Get model performance metrics"""
+    """Get performance metrics"""
     try:
-        # Try to get latest metrics from ML service
-        response = requests.get(f'{ML_SERVICE_URL}/models/status', timeout=5)
+        response = requests.get(f"{ML_SERVICE_URL}/models/status", timeout=5)
         if response.status_code == 200:
-            ml_metrics = response.json()
-            training_status['metrics'].update(ml_metrics)
-    except Exception as e:
-        logger.warning(f"Could not fetch ML metrics: {e}")
-    
-    return jsonify(training_status['metrics'])
-
-def trigger_ml_training(model_type: str):
-    """Trigger training in ML service and monitor progress"""
-    try:
-        # Update status
-        training_status['is_training'] = True
-        training_status['model_type'] = model_type
-        training_status['start_time'] = datetime.now().isoformat()
-        training_status['progress'] = 0.0
-        training_status['current_stage'] = 'Initializing training...'
-        
-        add_log(f"Starting {model_type} model training...")
-        
-        # Emit initial update
-        socketio.emit('training_update', training_status)
-        
-        # Simulate training progress monitoring
-        # In a real implementation, this would communicate with the ML service
-        simulate_training_progress(model_type)
-        
-    except Exception as e:
-        logger.error(f"Error in training trigger: {e}")
-        training_status['is_training'] = False
-        add_log(f"Training failed: {str(e)}")
-        socketio.emit('training_update', training_status)
-
-def simulate_training_progress(model_type: str):
-    """Simulate training progress for demonstration"""
-    stages = [
-        ("Collecting training data...", 30),
-        ("Engineering features...", 50),
-        ("Training model...", 80),
-        ("Validating performance...", 90),
-        ("Deploying model...", 100)
-    ]
-    
-    try:
-        for stage, target_progress in stages:
-            training_status['current_stage'] = stage
-            add_log(f"Stage: {stage}")
-            
-            # Gradually increase progress to target
-            current_progress = training_status['progress']
-            while current_progress < target_progress:
-                current_progress += 1
-                training_status['progress'] = current_progress
-                
-                # Emit progress update
-                socketio.emit('training_update', training_status)
-                
-                # Simulate work time
-                time.sleep(0.5)  # Adjust speed for demo
-                
-                if not training_status['is_training']:  # Check if stopped
-                    return
-        
-        # Training completed
-        training_status['is_training'] = False
-        training_status['current_stage'] = 'Training completed successfully!'
-        
-        # Update metrics (simulated)
-        if model_type == 'analytical':
-            training_status['metrics']['analytical_model'].update({
-                'accuracy': round(0.75 + (0.15 * time.time() % 1), 3),
-                'last_trained': datetime.now().isoformat(),
-                'training_count': training_status['metrics']['analytical_model']['training_count'] + 1
-            })
+            return jsonify(response.json())
         else:
-            training_status['metrics']['chatbot_model'].update({
-                'quality_score': round(0.80 + (0.15 * time.time() % 1), 3),
-                'last_trained': datetime.now().isoformat(),
-                'training_count': training_status['metrics']['chatbot_model']['training_count'] + 1
-            })
-        
-        add_log(f"{model_type.title()} model training completed successfully!")
-        socketio.emit('training_update', training_status)
-        
+            return jsonify({'error': 'Failed to get metrics'}), 500
     except Exception as e:
-        logger.error(f"Error in training simulation: {e}")
-        training_status['is_training'] = False
-        training_status['current_stage'] = f'Training failed: {str(e)}'
-        add_log(f"Training failed: {str(e)}")
-        socketio.emit('training_update', training_status)
-
-def add_log(message: str):
-    """Add log message with timestamp"""
-    log_entry = {
-        'timestamp': datetime.now().isoformat(),
-        'message': message
-    }
-    training_status['logs'].append(log_entry)
-    
-    # Keep only last 100 log entries
-    if len(training_status['logs']) > 100:
-        training_status['logs'] = training_status['logs'][-100:]
-    
-    logger.info(message)
+        return jsonify({'error': str(e)}), 500
 
 @socketio.on('connect')
 def handle_connect():
     """Handle client connection"""
-    logger.info('Client connected to training tracker')
+    logger.info('📱 Client connected to training dashboard')
     emit('training_update', training_status)
 
 @socketio.on('disconnect')
 def handle_disconnect():
     """Handle client disconnection"""
-    logger.info('Client disconnected from training tracker')
+    logger.info('📱 Client disconnected from training dashboard')
 
-@socketio.on('request_update')
-def handle_update_request():
-    """Handle client request for status update"""
+@socketio.on('request_status')
+def handle_status_request():
+    """Handle status request from client"""
     emit('training_update', training_status)
 
-# Background thread to monitor ML service
-def monitor_ml_service():
-    """Monitor ML service for training updates"""
-    while True:
-        try:
-            if not training_status['is_training']:
-                # Check if ML service is training
-                response = requests.get(f'{ML_SERVICE_URL}/models/status', timeout=5)
-                if response.status_code == 200:
-                    ml_status = response.json()
-                    
-                    # Update our status if ML service is training
-                    if ml_status.get('is_training', False):
-                        training_status.update({
-                            'is_training': True,
-                            'progress': ml_status.get('progress', 0),
-                            'current_stage': ml_status.get('current_stage', ''),
-                            'model_type': 'analytical'  # Default
-                        })
-                        socketio.emit('training_update', training_status)
-            
-            time.sleep(10)  # Check every 10 seconds
-            
-        except Exception as e:
-            logger.debug(f"ML service monitoring error: {e}")
-            time.sleep(30)  # Wait longer on error
-
-# Start monitoring thread
-monitor_thread = threading.Thread(target=monitor_ml_service, daemon=True)
-monitor_thread.start()
-
 if __name__ == '__main__':
+    print("\n" + "="*60)
+    print("🤖 VUTAX 2.0 - AI Training Progress Tracker")
+    print("="*60)
+    print("🚀 Starting training dashboard...")
+    print("📊 Real-time progress tracking enabled")
+    print("🌐 Dashboard available at: http://localhost:5000")
+    print("="*60 + "\n")
+    
     # Create templates directory if it doesn't exist
     os.makedirs('templates', exist_ok=True)
     
+    # Start monitoring thread
+    monitor_thread = threading.Thread(target=monitor_ml_service, daemon=True)
+    monitor_thread.start()
+    
     # Run the Flask app
-    socketio.run(app, host='0.0.0.0', port=5000, debug=True)
+    socketio.run(app, host='0.0.0.0', port=5000, debug=False)
