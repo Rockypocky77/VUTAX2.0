@@ -73,19 +73,147 @@ VUTAX-2.0/
 
 ## 🚦 Getting Started
 
-[Setup instructions will be added as components are built]
+### 1. **Prerequisites**
+- **Docker Desktop** (must be running)
+- **Internet connection** (for market data)
+- **10GB free space** (for AI models)
 
-## 📈 Roadmap
+### 2. **Clone Repository**
+```bash
+git clone https://github.com/Rockypocky77/VUTAX2.0.git
+cd "VUTAX 2.0"
+```
 
-- [x] Project architecture and planning
-- [ ] Core infrastructure setup
-- [ ] Real-time data pipeline
-- [ ] ML model development
-- [ ] Frontend dashboard
-- [ ] Paper trading system
-- [ ] Email notifications
-- [ ] Legal compliance integration
+### 3. **Launch Platform**
+```bash
+# Just double-click this file:
+start_website.bat
+```
+
+### 4. **Access Platform**
+- **🌐 Main Platform**: http://localhost:3000
+- **🤖 Training Dashboard**: http://localhost:5000  
+- **🔍 API Docs**: http://localhost:8001/docs
+
+## 🤖 AI Training System
+
+### **Automatic Training** (Recommended)
+- Models retrain **every 6 hours** automatically
+- No manual intervention needed
+- Fresh market data collected continuously
+- Performance improves over time
+
+### **Manual Training**
+```bash
+# Start training with progress tracking:
+start_training.bat
+```
+
+**Training Dashboard**: http://localhost:5000
+- Real-time progress bars
+- Accurate time remaining estimates  
+- Live training logs
+- Model performance metrics
+
+### **Training Stages**
+1. **📊 Data Collection** (0-30%) - Fetching market data
+2. **🔧 Feature Engineering** (30-50%) - Calculating indicators
+3. **🤖 Model Training** (50-80%) - Machine learning
+4. **✅ Validation** (80-90%) - Testing accuracy
+5. **🚀 Deployment** (90-100%) - Going live
+
+**Expected Time**: 15-30 minutes
+
+## 🎨 Platform Highlights
+
+### **🔍 Discover Page**
+- Type to search 3000+ stocks instantly
+- Beautiful autocomplete with animations
+- Sector filtering and sorting
+- Click any stock for AI analysis
+
+### **📊 Interactive Charts** 
+- Charts draw themselves with smooth animations
+- **Moving arrow** follows the line as it's created
+- Hover anywhere to see **exact price and date**
+- AI prediction lines show future targets
+- Technical indicators with explanations
+
+### **📈 Smart Watchlist**
+- **Plus button** on stock cards (top-right) to add
+- Click cards to **expand** and see full analysis
+- Search and filter your saved stocks
+- Remove with smooth delete animations
+
+### **🤖 AI Recommendations**
+- Real-time buy/sell signals
+- Risk levels: Conservative, Regular, High-Risk
+- Confidence scores and explanations
+- Historical accuracy tracking
+
+## ⚙️ Configuration (Optional)
+
+### **API Keys** (For Real Data)
+Create `.env` file:
+```env
+# Optional - platform works without these
+ALPHA_VANTAGE_API_KEY=your_key_here
+RESEND_API_KEY=your_key_here
+```
+
+**Get Free API Keys:**
+- **Alpha Vantage**: https://www.alphavantage.co/support/#api-key
+- **Resend**: https://resend.com
+
+**Note**: Platform works perfectly with mock data for testing!
+
+## 🛠️ Technology Stack
+
+- **Frontend**: Next.js 14, TypeScript, TailwindCSS, Framer Motion
+- **Backend**: Node.js, Python FastAPI, PostgreSQL, Redis
+- **AI/ML**: Scikit-learn, TensorFlow, 70+ technical indicators
+- **Real-time**: Socket.IO for live updates
+- **Deployment**: Docker Compose
+
+## 📊 Access Points
+
+| Service | URL | Description |
+|---------|-----|-------------|
+| **🌐 Main Platform** | http://localhost:3000 | Trading interface |
+| **🤖 Training Dashboard** | http://localhost:5000 | AI training progress |
+| **🔍 API Gateway** | http://localhost:4000 | Backend API |
+| **🧠 ML Service** | http://localhost:8001 | AI/ML endpoints |
+
+## 🚀 What You'll Experience
+
+1. **🎨 Beautiful Interface**: Smooth animations and modern design
+2. **🔍 Smart Search**: Find any stock instantly with autocomplete  
+3. **📊 Interactive Charts**: Hover for details, watch them draw
+4. **🤖 AI Insights**: Real-time recommendations and analysis
+5. **📈 Portfolio Tracking**: Monitor investments with AI guidance
+6. **⚡ Real-time Updates**: Live market data and notifications
+
+## 🎉 Ready to Start?
+
+### **For Trading:**
+```bash
+start_website.bat
+# Opens: http://localhost:3000
+```
+
+### **For AI Training:**
+```bash  
+start_training.bat
+# Opens: http://localhost:5000
+```
+
+### **Need Help?**
+- **📁 Documentation**: Check `docs/` folder
+- **🐛 Issues**: https://github.com/Rockypocky77/VUTAX2.0/issues
+- **💬 Support**: Create a GitHub issue
 
 ---
 
-**Disclaimer**: This platform provides information only and does not constitute financial advice. All trading involves risk.
+**🚀 Built with ❤️ for traders who love beautiful, intelligent platforms**
+
+**Ready to experience the future of trading? Just run `start_website.bat`!** ✨
