@@ -244,6 +244,9 @@ class AutoTrainer:
         start_date = end_date - timedelta(days=self.max_training_data_days)
         
         total_stocks = len(self.stock_universe)
+        successful_fetches = 0
+        
+        logger.info(f"📊 Starting data collection for {total_stocks} stocks...")
         
         for i, symbol in enumerate(self.stock_universe):
             try:
@@ -251,25 +254,39 @@ class AutoTrainer:
                 progress = (i / total_stocks) * 30  # 30% of total progress
                 self.training_progress = progress
                 
-                # Get historical data
-                data = await self.data_service.get_stock_data(
-                    symbol, 
-                    period='1y',
-                    interval='1d'
-                )
+                logger.info(f"Fetching data for {symbol} ({i+1}/{total_stocks})...")
                 
-                if data is not None and not data.empty:
-                    training_data[symbol] = data
-                    logger.debug(f"Collected data for {symbol}: {len(data)} records")
+                # Get historical data with error handling
+                try:
+                    data = await self.data_service.get_stock_data(
+                        symbol, 
+                        period='1y',
+                        interval='1d'
+                    )
+                    
+                    if data is not None and not data.empty and len(data) > 50:  # Minimum data requirement
+                        training_data[symbol] = data
+                        successful_fetches += 1
+                        logger.info(f"✅ Collected data for {symbol}: {len(data)} records")
+                    else:
+                        logger.warning(f"⚠️ Insufficient data for {symbol}: {len(data) if data is not None else 0} records")
+                        
+                except Exception as data_error:
+                    logger.error(f"❌ Data fetch failed for {symbol}: {data_error}")
+                    continue
                 
-                # Small delay to avoid rate limiting
-                await asyncio.sleep(0.1)
+                # Rate limiting - be respectful to APIs
+                await asyncio.sleep(0.2)  # 200ms delay between requests
                 
             except Exception as e:
-                logger.warning(f"Failed to collect data for {symbol}: {e}")
+                logger.warning(f"Failed to process {symbol}: {e}")
                 continue
         
-        logger.info(f"📊 Collected data for {len(training_data)} stocks")
+        logger.info(f"📊 Successfully collected data for {successful_fetches}/{total_stocks} stocks")
+        
+        if successful_fetches < 5:  # Minimum threshold
+            raise Exception(f"Insufficient data collected: only {successful_fetches} stocks. Check API keys and network connection.")
+        
         return training_data
     
     async def _prepare_training_features(self, training_data: Dict[str, pd.DataFrame]) -> tuple:

@@ -1,0 +1,1122 @@
+symbol,name,sector
+AAPL,Apple Inc.,Technology
+MSFT,Microsoft Corporation,Technology
+GOOGL,Alphabet Inc. Class A,Technology
+GOOG,Alphabet Inc. Class C,Technology
+AMZN,Amazon.com Inc.,Consumer Cyclical
+NVDA,NVIDIA Corporation,Technology
+META,Meta Platforms Inc.,Technology
+TSLA,Tesla Inc.,Automotive
+BRK.B,Berkshire Hathaway Inc.,Financial
+LLY,Eli Lilly and Company,Healthcare
+V,Visa Inc.,Financial
+UNH,UnitedHealth Group Inc.,Healthcare
+XOM,Exxon Mobil Corporation,Energy
+JPM,JPMorgan Chase & Co.,Financial
+JNJ,Johnson & Johnson,Healthcare
+WMT,Walmart Inc.,Retail
+MA,Mastercard Inc.,Financial
+PG,Procter & Gamble Co.,Consumer Goods
+HD,Home Depot Inc.,Retail
+CVX,Chevron Corporation,Energy
+ABBV,AbbVie Inc.,Healthcare
+MRK,Merck & Co. Inc.,Healthcare
+KO,Coca-Cola Company,Beverages
+COST,Costco Wholesale Corp.,Retail
+PEP,PepsiCo Inc.,Beverages
+AVGO,Broadcom Inc.,Technology
+TMO,Thermo Fisher Scientific,Healthcare
+BAC,Bank of America Corp.,Financial
+ADBE,Adobe Inc.,Technology
+MCD,McDonald's Corporation,Restaurants
+CSCO,Cisco Systems Inc.,Technology
+ABT,Abbott Laboratories,Healthcare
+CRM,Salesforce Inc.,Technology
+ACN,Accenture plc,Technology
+ORCL,Oracle Corporation,Technology
+NFLX,Netflix Inc.,Entertainment
+AMD,Advanced Micro Devices,Technology
+TXN,Texas Instruments Inc.,Technology
+NKE,Nike Inc.,Apparel
+DHR,Danaher Corporation,Healthcare
+DIS,Walt Disney Company,Entertainment
+QCOM,Qualcomm Inc.,Technology
+PM,Philip Morris International,Tobacco
+VZ,Verizon Communications,Telecom
+CMCSA,Comcast Corporation,Media
+INTC,Intel Corporation,Technology
+UPS,United Parcel Service,Logistics
+NEE,NextEra Energy Inc.,Utilities
+PFE,Pfizer Inc.,Healthcare
+T,AT&T Inc.,Telecom
+BMY,Bristol-Myers Squibb,Healthcare
+LOW,Lowe's Companies Inc.,Retail
+MS,Morgan Stanley,Financial
+UNP,Union Pacific Corporation,Transportation
+RTX,Raytheon Technologies,Aerospace
+HON,Honeywell International,Industrial
+COP,ConocoPhillips,Energy
+SPGI,S&P Global Inc.,Financial
+GS,Goldman Sachs Group Inc.,Financial
+BA,Boeing Company,Aerospace
+INTU,Intuit Inc.,Technology
+ELV,Elevance Health Inc.,Healthcare
+DE,Deere & Company,Industrial
+BLK,BlackRock Inc.,Financial
+CAT,Caterpillar Inc.,Industrial
+SBUX,Starbucks Corporation,Restaurants
+GILD,Gilead Sciences Inc.,Biotech
+LMT,Lockheed Martin Corporation,Aerospace
+AXP,American Express Company,Financial
+AMGN,Amgen Inc.,Biotech
+MMC,Marsh & McLennan,Financial
+BKNG,Booking Holdings Inc.,Travel
+ADI,Analog Devices Inc.,Technology
+SYK,Stryker Corporation,Healthcare
+NOW,ServiceNow Inc.,Technology
+TJX,TJX Companies Inc.,Retail
+MDLZ,Mondelez International,Food
+VRTX,Vertex Pharmaceuticals,Biotech
+CI,Cigna Corporation,Healthcare
+ZTS,Zoetis Inc.,Healthcare
+REGN,Regeneron Pharmaceuticals,Biotech
+PLD,Prologis Inc.,REIT
+C,Citigroup Inc.,Financial
+ISRG,Intuitive Surgical Inc.,Healthcare
+CB,Chubb Limited,Financial
+MO,Altria Group Inc.,Tobacco
+DUK,Duke Energy Corporation,Utilities
+ETN,Eaton Corporation,Industrial
+BSX,Boston Scientific,Healthcare
+SCHW,Charles Schwab Corporation,Financial
+AMT,American Tower Corp.,REIT
+SO,Southern Company,Utilities
+PGR,Progressive Corporation,Financial
+SLB,Schlumberger Limited,Energy
+EOG,EOG Resources Inc.,Energy
+BDX,Becton Dickinson,Healthcare
+AON,Aon plc,Financial
+ITW,Illinois Tool Works,Industrial
+WM,Waste Management Inc.,Industrial
+APD,Air Products and Chemicals,Materials
+CME,CME Group Inc.,Financial
+EQIX,Equinix Inc.,REIT
+CSX,CSX Corporation,Transportation
+MMM,3M Company,Industrial
+GE,General Electric Company,Industrial
+FI,Fiserv Inc.,Financial
+CL,Colgate-Palmolive Company,Consumer Goods
+TGT,Target Corporation,Retail
+USB,U.S. Bancorp,Financial
+SHW,Sherwin-Williams Company,Materials
+MCO,Moody's Corporation,Financial
+NSC,Norfolk Southern,Transportation
+MU,Micron Technology Inc.,Technology
+PNC,PNC Financial Services,Financial
+EMR,Emerson Electric Co.,Industrial
+ICE,Intercontinental Exchange,Financial
+F,Ford Motor Company,Automotive
+ADP,Automatic Data Processing,Technology
+GM,General Motors Company,Automotive
+WFC,Wells Fargo & Company,Financial
+HCA,HCA Healthcare Inc.,Healthcare
+PSA,Public Storage,REIT
+ECL,Ecolab Inc.,Materials
+CCI,Crown Castle Inc.,REIT
+PYPL,PayPal Holdings Inc.,Fintech
+APH,Amphenol Corporation,Technology
+GD,General Dynamics,Aerospace
+TT,Trane Technologies,Industrial
+MSI,Motorola Solutions,Technology
+SRE,Sempra Energy,Utilities
+ROP,Roper Technologies,Technology
+TFC,Truist Financial,Financial
+KLAC,KLA Corporation,Technology
+EW,Edwards Lifesciences,Healthcare
+ANET,Arista Networks Inc.,Technology
+ORLY,O'Reilly Automotive,Retail
+NOC,Northrop Grumman,Aerospace
+MCK,McKesson Corporation,Healthcare
+WELL,Welltower Inc.,REIT
+HUM,Humana Inc.,Healthcare
+AZO,AutoZone Inc.,Retail
+AJG,Arthur J. Gallagher,Financial
+COF,Capital One Financial,Financial
+PSX,Phillips 66,Energy
+TDG,TransDigm Group,Aerospace
+MAR,Marriott International,Hospitality
+AFL,Aflac Inc.,Financial
+AIG,American International,Financial
+AEP,American Electric Power,Utilities
+CDNS,Cadence Design Systems,Technology
+LRCX,Lam Research Corporation,Technology
+NXPI,NXP Semiconductors,Technology
+DLR,Digital Realty Trust,REIT
+SPG,Simon Property Group,REIT
+CARR,Carrier Global,Industrial
+PCAR,PACCAR Inc.,Automotive
+PAYX,Paychex Inc.,Technology
+SYY,Sysco Corporation,Food Service
+KMB,Kimberly-Clark,Consumer Goods
+D,Dominion Energy,Utilities
+FICO,Fair Isaac Corporation,Technology
+O,Realty Income Corporation,REIT
+TEL,TE Connectivity,Technology
+ADM,Archer-Daniels-Midland,Agriculture
+MCHP,Microchip Technology,Technology
+BK,Bank of New York Mellon,Financial
+A,Agilent Technologies,Healthcare
+OXY,Occidental Petroleum,Energy
+CTAS,Cintas Corporation,Industrial
+TRV,Travelers Companies,Financial
+MNST,Monster Beverage,Beverages
+CMG,Chipotle Mexican Grill,Restaurants
+ADSK,Autodesk Inc.,Technology
+KR,Kroger Company,Retail
+FAST,Fastenal Company,Industrial
+ALL,Allstate Corporation,Financial
+JCI,Johnson Controls,Industrial
+ODFL,Old Dominion Freight,Transportation
+YUM,Yum! Brands Inc.,Restaurants
+AMP,Ameriprise Financial,Financial
+CTVA,Corteva Inc.,Agriculture
+HSY,Hershey Company,Food
+ROST,Ross Stores Inc.,Retail
+CVS,CVS Health Corporation,Healthcare
+DXCM,DexCom Inc.,Healthcare
+KHC,Kraft Heinz Company,Food
+CMI,Cummins Inc.,Industrial
+GWW,W.W. Grainger Inc.,Industrial
+MSI,Motorola Solutions Inc.,Technology
+EXC,Exelon Corporation,Utilities
+MSCI,MSCI Inc.,Financial
+FTNT,Fortinet Inc.,Cybersecurity
+CNC,Centene Corporation,Healthcare
+PRU,Prudential Financial,Financial
+EA,Electronic Arts Inc.,Gaming
+NEM,Newmont Corporation,Materials
+VRSK,Verisk Analytics,Technology
+IT,Gartner Inc.,Technology
+OTIS,Otis Worldwide,Industrial
+ED,Consolidated Edison,Utilities
+IQV,IQVIA Holdings,Healthcare
+GIS,General Mills Inc.,Food
+RMD,ResMed Inc.,Healthcare
+STZ,Constellation Brands,Beverages
+WEC,WEC Energy Group,Utilities
+GPN,Global Payments Inc.,Financial
+AME,AMETEK Inc.,Industrial
+ROK,Rockwell Automation,Industrial
+SYF,Synchrony Financial,Financial
+CPRT,Copart Inc.,Industrial
+NUE,Nucor Corporation,Materials
+DD,DuPont de Nemours,Materials
+DFS,Discover Financial,Financial
+HLT,Hilton Worldwide,Hospitality
+DHI,D.R. Horton Inc.,Construction
+IDXX,IDEXX Laboratories,Healthcare
+BIIB,Biogen Inc.,Biotech
+PPG,PPG Industries Inc.,Materials
+EXR,Extra Space Storage,REIT
+XEL,Xcel Energy Inc.,Utilities
+FANG,Diamondback Energy,Energy
+MTD,Mettler-Toledo,Healthcare
+LHX,L3Harris Technologies,Aerospace
+PEG,Public Service Enterprise,Utilities
+CTSH,Cognizant Technology,Technology
+DOW,Dow Inc.,Materials
+IFF,International Flavors,Materials
+VMC,Vulcan Materials,Materials
+ANSS,ANSYS Inc.,Technology
+VICI,VICI Properties,REIT
+BKR,Baker Hughes,Energy
+GLW,Corning Inc.,Technology
+WMB,Williams Companies,Energy
+LEN,Lennar Corporation,Construction
+AWK,American Water Works,Utilities
+HES,Hess Corporation,Energy
+HPQ,HP Inc.,Technology
+DAL,Delta Air Lines Inc.,Airlines
+HAL,Halliburton Company,Energy
+URI,United Rentals Inc.,Industrial
+VLO,Valero Energy,Energy
+MLM,Martin Marietta,Materials
+WBD,Warner Bros. Discovery,Media
+CBRE,CBRE Group Inc.,Real Estate
+ETR,Entergy Corporation,Utilities
+PCG,PG&E Corporation,Utilities
+RSG,Republic Services,Industrial
+WAB,Westinghouse Air Brake,Transportation
+KEYS,Keysight Technologies,Technology
+FTV,Fortive Corporation,Industrial
+PKI,PerkinElmer Inc.,Healthcare
+FITB,Fifth Third Bancorp,Financial
+WY,Weyerhaeuser Company,REIT
+LH,Laboratory Corp,Healthcare
+TSN,Tyson Foods Inc.,Food
+ALGN,Align Technology,Healthcare
+ARE,Alexandria Real Estate,REIT
+IRM,Iron Mountain Inc.,REIT
+PPL,PPL Corporation,Utilities
+MOH,Molina Healthcare,Healthcare
+DTE,DTE Energy Company,Utilities
+RF,Regions Financial,Financial
+HBAN,Huntington Bancshares,Financial
+CMS,CMS Energy Corporation,Utilities
+TROW,T. Rowe Price Group,Financial
+CHD,Church & Dwight,Consumer Goods
+AVB,AvalonBay Communities,REIT
+CAH,Cardinal Health,Healthcare
+MPWR,Monolithic Power Systems,Technology
+MKC,McCormick & Company,Food
+BR,Broadridge Financial,Financial
+CFG,Citizens Financial,Financial
+AMCR,Amcor plc,Materials
+DOV,Dover Corporation,Industrial
+K,Kellogg Company,Food
+AEE,Ameren Corporation,Utilities
+MRO,Marathon Oil,Energy
+STE,STERIS plc,Healthcare
+EXPD,Expeditors International,Logistics
+CLX,Clorox Company,Consumer Goods
+NTRS,Northern Trust,Financial
+DRI,Dardenne Restaurants,Restaurants
+DG,Dollar General,Retail
+HPE,Hewlett Packard Enterprise,Technology
+KMX,CarMax Inc.,Retail
+EIX,Edison International,Utilities
+CNP,CenterPoint Energy,Utilities
+FE,FirstEnergy Corp.,Utilities
+MTB,M&T Bank Corporation,Financial
+AKAM,Akamai Technologies,Technology
+SBAC,SBA Communications,REIT
+FDS,FactSet Research,Financial
+MAA,Mid-America Apartment,REIT
+LVS,Las Vegas Sands,Gaming
+TDY,Teledyne Technologies,Technology
+TTWO,Take-Two Interactive,Gaming
+ESS,Essex Property Trust,REIT
+SWKS,Skyworks Solutions,Technology
+CDW,CDW Corporation,Technology
+EBAY,eBay Inc.,E-commerce
+OMC,Omnicom Group,Media
+ZBRA,Zebra Technologies,Technology
+TYL,Tyler Technologies,Technology
+BBY,Best Buy Co. Inc.,Retail
+SWK,Stanley Black & Decker,Industrial
+UAL,United Airlines Holdings,Airlines
+VRSN,VeriSign Inc.,Technology
+WST,West Pharmaceutical,Healthcare
+NVR,NVR Inc.,Construction
+DLTR,Dollar Tree Inc.,Retail
+CINF,Cincinnati Financial,Financial
+BRO,Brown & Brown Inc.,Financial
+HOLX,Hologic Inc.,Healthcare
+EQR,Equity Residential,REIT
+PFG,Principal Financial,Financial
+IP,International Paper,Materials
+ULTA,Ulta Beauty Inc.,Retail
+WDC,Western Digital,Technology
+TER,Teradyne Inc.,Technology
+DGX,Quest Diagnostics,Healthcare
+J,Jacobs Engineering,Industrial
+STX,Seagate Technology,Technology
+INVH,Invitation Homes,REIT
+FLT,FLEETCOR Technologies,Financial
+CAG,ConAgra Foods,Food
+BALL,Ball Corporation,Materials
+WAT,Waters Corporation,Healthcare
+EXPE,Expedia Group,Travel
+NTAP,NetApp Inc.,Technology
+AES,AES Corporation,Utilities
+SJM,J.M. Smucker Company,Food
+CRL,Charles River Labs,Healthcare
+L,Loews Corporation,Financial
+KEY,KeyCorp,Financial
+CPB,Campbell Soup Company,Food
+LYB,LyondellBasell,Materials
+APTV,Aptiv PLC,Automotive
+TSCO,Tractor Supply,Retail
+CE,Celanese Corporation,Materials
+TRMB,Trimble Inc.,Technology
+JBHT,J.B. Hunt Transport,Transportation
+LUV,Southwest Airlines,Airlines
+PNR,Pentair plc,Industrial
+PEAK,Healthpeak Properties,REIT
+GPC,Genuine Parts Company,Automotive
+CBOE,Cboe Global Markets,Financial
+LKQ,LKQ Corporation,Automotive
+EVRG,Evergy Inc.,Utilities
+MAS,Masco Corporation,Industrial
+NDAQ,Nasdaq Inc.,Financial
+CZR,Caesars Entertainment,Gaming
+JKHY,Jack Henry & Associates,Technology
+WRB,W.R. Berkley,Financial
+UDR,UDR Inc.,REIT
+FOXA,Fox Corporation Class A,Media
+FOX,Fox Corporation Class B,Media
+HII,Huntington Ingalls,Aerospace
+BXP,Boston Properties,REIT
+EMN,Eastman Chemical,Materials
+CPT,Camden Property Trust,REIT
+CCL,Carnival Corporation,Travel
+JNPR,Juniper Networks,Technology
+NI,NiSource Inc.,Utilities
+LDOS,Leidos Holdings,Aerospace
+CHRW,C.H. Robinson Worldwide,Logistics
+FFIV,F5 Inc.,Technology
+AOS,A.O. Smith Corporation,Industrial
+APA,APA Corporation,Energy
+QRVO,Qorvo Inc.,Technology
+RE,Everest Re Group,Financial
+REG,Regency Centers,REIT
+PNW,Pinnacle West Capital,Utilities
+HSIC,Henry Schein Inc.,Healthcare
+AAL,American Airlines,Airlines
+AIZ,Assurant Inc.,Financial
+MKTX,MarketAxess Holdings,Financial
+LNC,Lincoln National,Financial
+CTLT,Catalent Inc.,Healthcare
+SNA,Snap-on Inc.,Industrial
+RJF,Raymond James Financial,Financial
+IEX,IDEX Corporation,Industrial
+NDSN,Nordson Corporation,Industrial
+BF.B,Brown-Forman Class B,Beverages
+BF.A,Brown-Forman Class A,Beverages
+HRL,Hormel Foods,Food
+TAP,Molson Coors Beverage,Beverages
+MOS,Mosaic Company,Agriculture
+DVN,Devon Energy,Energy
+DISH,DISH Network,Media
+NRG,NRG Energy Inc.,Utilities
+GL,Globe Life Inc.,Financial
+BBWI,Bath & Body Works,Retail
+GNRC,Generac Holdings,Industrial
+FRT,Federal Realty,REIT
+UHS,Universal Health Services,Healthcare
+VTRS,Viatris Inc.,Healthcare
+KIM,Kimco Realty,REIT
+XYL,Xylem Inc.,Industrial
+MGM,MGM Resorts,Gaming
+TPR,Tapestry Inc.,Luxury
+VTR,Ventas Inc.,REIT
+CF,CF Industries,Agriculture
+ALB,Albemarle Corporation,Materials
+BEN,Franklin Resources,Financial
+PAYC,Paycom Software,Technology
+LW,Lamb Weston Holdings,Food
+POOL,Pool Corporation,Retail
+WYNN,Wynn Resorts,Gaming
+CMA,Comerica Inc.,Financial
+AAP,Advance Auto Parts,Retail
+PTC,PTC Inc.,Technology
+ROL,Rollins Inc.,Industrial
+ZION,Zions Bancorporation,Financial
+RCL,Royal Caribbean,Travel
+IVZ,Invesco Ltd.,Financial
+ATO,Atmos Energy,Utilities
+TECH,Bio-Techne Corporation,Healthcare
+ALLE,Allegion plc,Industrial
+HWM,Howmet Aerospace,Aerospace
+HST,Host Hotels & Resorts,REIT
+OKE,ONEOK Inc.,Energy
+WBA,Walgreens Boots Alliance,Retail
+SEE,Sealed Air,Materials
+WHR,Whirlpool Corporation,Consumer Goods
+NCLH,Norwegian Cruise Line,Travel
+PWR,Quanta Services,Industrial
+NLSN,Nielsen Holdings,Media
+HAS,Hasbro Inc.,Consumer Goods
+ABMD,Abiomed Inc.,Healthcare
+INCY,Incyte Corporation,Biotech
+ENPH,Enphase Energy,Energy
+SEDG,SolarEdge Technologies,Energy
+MRNA,Moderna Inc.,Biotech
+ZM,Zoom Video Communications,Technology
+DOCU,DocuSign Inc.,Technology
+DDOG,Datadog Inc.,Technology
+CRWD,CrowdStrike Holdings,Cybersecurity
+NET,Cloudflare Inc.,Technology
+SNAP,Snap Inc.,Technology
+ROKU,Roku Inc.,Entertainment
+PINS,Pinterest Inc.,Technology
+ABNB,Airbnb Inc.,Travel
+UBER,Uber Technologies Inc.,Transportation
+LYFT,Lyft Inc.,Transportation
+DASH,DoorDash Inc.,Food Delivery
+SNOW,Snowflake Inc.,Cloud
+PLTR,Palantir Technologies,AI/Data
+COIN,Coinbase Global Inc.,Crypto
+RBLX,Roblox Corporation,Gaming
+RIVN,Rivian Automotive Inc.,Automotive
+LCID,Lucid Group Inc.,Automotive
+SOFI,SoFi Technologies Inc.,Fintech
+AFRM,Affirm Holdings,Fintech
+HOOD,Robinhood Markets,Fintech
+ZS,Zscaler Inc.,Cybersecurity
+OKTA,Okta Inc.,Cybersecurity
+PANW,Palo Alto Networks,Cybersecurity
+CHTR,Charter Communications,Media
+TMUS,T-Mobile US Inc.,Telecom
+SHOP,Shopify Inc.,E-commerce
+SQ,Block Inc.,Fintech
+ETSY,Etsy Inc.,E-commerce
+TWLO,Twilio Inc.,Technology
+SPLK,Splunk Inc.,Technology
+MDB,MongoDB Inc.,Technology
+TEAM,Atlassian Corporation,Technology
+ZI,ZoomInfo Technologies,Technology
+BILL,Bill.com Holdings,Fintech
+U,Unity Software,Technology
+PCTY,Paylocity Holding,Technology
+VEEV,Veeva Systems,Healthcare
+HUBS,HubSpot Inc.,Technology
+WDAY,Workday Inc.,Technology
+RNG,RingCentral Inc.,Technology
+PD,PagerDuty Inc.,Technology
+ESTC,Elastic N.V.,Technology
+DBX,Dropbox Inc.,Technology
+BOX,Box Inc.,Technology
+ZUO,Zuora Inc.,Technology
+TTD,Trade Desk Inc.,Technology
+APPS,Digital Turbine,Technology
+MGNI,Magnite Inc.,Technology
+PUBM,PubMatic Inc.,Technology
+RAMP,LiveRamp Holdings,Technology
+NEWR,New Relic Inc.,Technology
+DT,Dynatrace Inc.,Technology
+CFLT,Confluent Inc.,Technology
+PATH,UiPath Inc.,Technology
+AI,C3.ai Inc.,AI
+SOUN,SoundHound AI,AI
+BBAI,BigBear.ai Holdings,AI
+RXRX,Recursion Pharmaceuticals,Biotech
+PSTG,Pure Storage,Technology
+CVNA,Carvana Co.,Automotive
+OPEN,Opendoor Technologies,Real Estate
+RKT,Rocket Companies,Financial
+UPST,Upstart Holdings,Fintech
+LC,LendingClub Corporation,Fintech
+AFRM,Affirm Holdings,Fintech
+NU,Nu Holdings,Fintech
+SFM,Sprouts Farmers Market,Retail
+CHEF,Chefs' Warehouse,Food Service
+PRDO,Perdoceo Education,Education
+STRA,Strategic Education,Education
+APEI,American Public Education,Education
+LOPE,Grand Canyon Education,Education
+COUR,Coursera Inc.,Education
+DUOL,Duolingo Inc.,Education
+CHGG,Chegg Inc.,Education
+ZD,Ziff Davis Inc.,Media
+BMBL,Bumble Inc.,Technology
+MTCH,Match Group Inc.,Technology
+JMIA,Jumia Technologies,E-commerce
+MELI,MercadoLibre Inc.,E-commerce
+SE,Sea Limited,E-commerce
+GRAB,Grab Holdings,Transportation
+BEKE,KE Holdings,Real Estate
+CPNG,Coupang Inc.,E-commerce
+PDD,Pinduoduo Inc.,E-commerce
+JD,JD.com Inc.,E-commerce
+BABA,Alibaba Group,E-commerce
+BIDU,Baidu Inc.,Technology
+BILI,Bilibili Inc.,Entertainment
+IQ,iQIYI Inc.,Entertainment
+NTES,NetEase Inc.,Gaming
+VIPS,Vipshop Holdings,E-commerce
+TAL,TAL Education Group,Education
+EDU,New Oriental Education,Education
+FUTU,Futu Holdings,Fintech
+TIGR,UP Fintech Holding,Fintech
+NIO,NIO Inc.,Automotive
+XPEV,XPeng Inc.,Automotive
+LI,Li Auto Inc.,Automotive
+BYD,Boyd Gaming,Gaming
+CHDN,Churchill Downs,Gaming
+DKNG,DraftKings Inc.,Gaming
+PENN,Penn Entertainment,Gaming
+RSI,Rush Street Interactive,Gaming
+GNOG,Golden Nugget Online,Gaming
+BETZ,Roundhill Sports Betting,ETF
+BUZZ,VanEck Social Sentiment,ETF
+ARKK,ARK Innovation ETF,ETF
+ARKG,ARK Genomic Revolution,ETF
+ARKW,ARK Next Generation,ETF
+ARKF,ARK Fintech Innovation,ETF
+ARKQ,ARK Autonomous Tech,ETF
+SPY,SPDR S&P 500 ETF,ETF
+QQQ,Invesco QQQ Trust,ETF
+IWM,iShares Russell 2000,ETF
+VOO,Vanguard S&P 500,ETF
+VTI,Vanguard Total Stock,ETF
+DIA,SPDR Dow Jones,ETF
+EFA,iShares MSCI EAFE,ETF
+EEM,iShares MSCI Emerging,ETF
+AGG,iShares Core US Aggregate,ETF
+LQD,iShares iBoxx Investment,ETF
+HYG,iShares iBoxx High Yield,ETF
+TLT,iShares 20+ Year Treasury,ETF
+GLD,SPDR Gold Shares,ETF
+SLV,iShares Silver Trust,ETF
+USO,United States Oil Fund,ETF
+UNG,United States Natural Gas,ETF
+XLE,Energy Select Sector,ETF
+XLF,Financial Select Sector,ETF
+XLK,Technology Select Sector,ETF
+XLV,Health Care Select Sector,ETF
+XLI,Industrial Select Sector,ETF
+XLP,Consumer Staples Select,ETF
+XLY,Consumer Discretionary,ETF
+XLU,Utilities Select Sector,ETF
+XLB,Materials Select Sector,ETF
+XLRE,Real Estate Select Sector,ETF
+VGT,Vanguard Information Tech,ETF
+VHT,Vanguard Health Care,ETF
+VFH,Vanguard Financials,ETF
+VDE,Vanguard Energy,ETF
+VAW,Vanguard Materials,ETF
+VNQ,Vanguard Real Estate,ETF
+VIG,Vanguard Dividend Appreciation,ETF
+VYM,Vanguard High Dividend,ETF
+SCHD,Schwab US Dividend Equity,ETF
+SPHD,Invesco S&P 500 High Div,ETF
+DGRO,iShares Core Dividend Growth,ETF
+DVY,iShares Select Dividend,ETF
+SDY,SPDR S&P Dividend,ETF
+NOBL,ProShares S&P 500 Dividend,ETF
+VEA,Vanguard FTSE Developed,ETF
+VWO,Vanguard FTSE Emerging,ETF
+IEFA,iShares Core MSCI EAFE,ETF
+IEMG,iShares Core MSCI Emerging,ETF
+IXUS,iShares Core MSCI Total,ETF
+VXUS,Vanguard Total International,ETF
+ACWI,iShares MSCI ACWI,ETF
+VT,Vanguard Total World Stock,ETF
+BND,Vanguard Total Bond Market,ETF
+BNDX,Vanguard Total International,ETF
+BSV,Vanguard Short-Term Bond,ETF
+BIV,Vanguard Intermediate-Term,ETF
+BLV,Vanguard Long-Term Bond,ETF
+VCSH,Vanguard Short-Term Corporate,ETF
+VCIT,Vanguard Intermediate-Term,ETF
+VCLT,Vanguard Long-Term Corporate,ETF
+MUB,iShares National Muni Bond,ETF
+TFI,SPDR Nuveen Bloomberg,ETF
+SUB,iShares Short-Term National,ETF
+ITM,VanEck Intermediate Muni,ETF
+MLN,VanEck Long Muni,ETF
+PVI,Invesco VRDO Tax-Free,ETF
+SHY,iShares 1-3 Year Treasury,ETF
+IEF,iShares 7-10 Year Treasury,ETF
+TLH,iShares 10-20 Year Treasury,ETF
+GOVT,iShares US Treasury Bond,ETF
+TIPS,iShares TIPS Bond,ETF
+VTIP,Vanguard Short-Term Inflation,ETF
+STIP,iShares 0-5 Year TIPS,ETF
+SCHP,Schwab US TIPS,ETF
+IGIB,iShares Intermediate Credit,ETF
+ISTB,iShares Core 1-5 Year USD,ETF
+IGSB,iShares 1-5 Year Investment,ETF
+IUSB,iShares Core Total USD,ETF
+USIG,iShares Broad USD Investment,ETF
+SPTL,SPDR Portfolio Long Term,ETF
+SPTS,SPDR Portfolio Short Term,ETF
+SPTI,SPDR Portfolio Intermediate,ETF
+EMB,iShares JP Morgan USD Emerging,ETF
+PCY,Invesco Emerging Markets,ETF
+VWOB,Vanguard Emerging Markets,ETF
+EMLC,VanEck Emerging Markets,ETF
+EMHY,iShares Emerging Markets High,ETF
+FALN,iShares Fallen Angels USD,ETF
+ANGL,VanEck Fallen Angel High,ETF
+HYDB,iShares High Yield Systematic,ETF
+SHYG,iShares 0-5 Year High Yield,ETF
+SJNK,SPDR Bloomberg Short Term,ETF
+USHY,iShares Broad USD High Yield,ETF
+JNK,SPDR Bloomberg High Yield,ETF
+GHYG,iShares US & Intl High Yield,ETF
+BNDW,Vanguard Total World Bond,ETF
+BKOR,FlexShares Credit-Scored US,ETF
+TOTL,SPDR DoubleLine Total Return,ETF
+SCHZ,Schwab US Aggregate Bond,ETF
+IAU,iShares Gold Trust,ETF
+GLDM,SPDR Gold MiniShares,ETF
+SGOL,abrdn Physical Gold Shares,ETF
+BAR,GraniteShares Gold Trust,ETF
+OUNZ,VanEck Merk Gold Trust,ETF
+PHYS,Sprott Physical Gold Trust,ETF
+AAAU,Goldman Sachs Physical Gold,ETF
+DGL,Invesco DB Gold Fund,ETF
+GDX,VanEck Gold Miners,ETF
+GDXJ,VanEck Junior Gold Miners,ETF
+RING,iShares MSCI Global Gold,ETF
+GOEX,Global X Gold Explorers,ETF
+GLDX,VanEck Gold Miners UCITS,ETF
+SILJ,ETFMG Prime Junior Silver,ETF
+SIL,Global X Silver Miners,ETF
+PSLV,Sprott Physical Silver Trust,ETF
+SIVR,abrdn Physical Silver Shares,ETF
+DBS,Invesco DB Silver Fund,ETF
+PPLT,abrdn Physical Platinum,ETF
+PALL,abrdn Physical Palladium,ETF
+DBB,Invesco DB Base Metals Fund,ETF
+CPER,United States Copper Index,ETF
+JJC,iPath Series B Bloomberg Copper,ETF
+COPX,Global X Copper Miners,ETF
+PICK,iShares MSCI Global Metals,ETF
+XME,SPDR S&P Metals & Mining,ETF
+DBO,Invesco DB Oil Fund,ETF
+BNO,United States Brent Oil,ETF
+UWT,VelocityShares 3x Long Crude,ETF
+DWT,VelocityShares 3x Inverse,ETF
+SCO,ProShares UltraShort Bloomberg,ETF
+UCO,ProShares Ultra Bloomberg,ETF
+DRIP,Direxion Daily S&P Oil & Gas,ETF
+GUSH,Direxion Daily S&P Oil & Gas,ETF
+ERX,Direxion Daily Energy Bull 3X,ETF
+ERY,Direxion Daily Energy Bear 3X,ETF
+BOIL,ProShares Ultra Bloomberg Natural,ETF
+KOLD,ProShares UltraShort Bloomberg,ETF
+UGA,United States Gasoline Fund,ETF
+UHN,United States Heating Oil,ETF
+WEAT,Teucrium Wheat Fund,ETF
+CORN,Teucrium Corn Fund,ETF
+SOYB,Teucrium Soybean Fund,ETF
+CANE,Teucrium Sugar Fund,ETF
+JO,iPath Series B Bloomberg Coffee,ETF
+NIB,iPath Series B Bloomberg Cocoa,ETF
+BAL,iPath Series B Bloomberg Cotton,ETF
+COW,iPath Series B Bloomberg Livestock,ETF
+DBA,Invesco DB Agriculture Fund,ETF
+RJA,Elements Rogers Intl Commodity,ETF
+FXI,iShares China Large-Cap,ETF
+MCHI,iShares MSCI China,ETF
+GXC,SPDR S&P China,ETF
+YINN,Direxion Daily FTSE China Bull,ETF
+YANG,Direxion Daily FTSE China Bear,ETF
+KWEB,KraneShares CSI China Internet,ETF
+CQQQ,Invesco China Technology,ETF
+ASHR,Xtrackers Harvest CSI 300,ETF
+EWJ,iShares MSCI Japan,ETF
+JPXN,iShares JPX-Nikkei 400,ETF
+DXJ,WisdomTree Japan Hedged Equity,ETF
+HEWJ,iShares Currency Hedged MSCI,ETF
+EWG,iShares MSCI Germany,ETF
+EWU,iShares MSCI United Kingdom,ETF
+EWC,iShares MSCI Canada,ETF
+EWA,iShares MSCI Australia,ETF
+EWY,iShares MSCI South Korea,ETF
+EWT,iShares MSCI Taiwan,ETF
+EWZ,iShares MSCI Brazil,ETF
+EWW,iShares MSCI Mexico,ETF
+EWI,iShares MSCI Italy,ETF
+EWP,iShares MSCI Spain,ETF
+EWQ,iShares MSCI France,ETF
+EWH,iShares MSCI Hong Kong,ETF
+EWS,iShares MSCI Singapore,ETF
+THD,iShares MSCI Thailand,ETF
+INDA,iShares MSCI India,ETF
+INDY,iShares India 50,ETF
+PIN,Invesco India ETF,ETF
+EPI,WisdomTree India Earnings,ETF
+RSX,VanEck Russia ETF,ETF
+ERUS,iShares MSCI Russia,ETF
+TUR,iShares MSCI Turkey,ETF
+ARGT,Global X MSCI Argentina,ETF
+ECH,iShares MSCI Chile,ETF
+EPU,iShares MSCI Peru,ETF
+EZA,iShares MSCI South Africa,ETF
+ENZL,iShares MSCI New Zealand,ETF
+EWL,iShares MSCI Switzerland,ETF
+EWN,iShares MSCI Netherlands,ETF
+EWD,iShares MSCI Sweden,ETF
+EDEN,iShares MSCI Denmark,ETF
+ENOR,iShares MSCI Norway,ETF
+EPOL,iShares MSCI Poland,ETF
+EGPT,VanEck Egypt Index,ETF
+QAT,iShares MSCI Qatar,ETF
+UAE,iShares MSCI UAE,ETF
+KSA,iShares MSCI Saudi Arabia,ETF
+EDEN,iShares MSCI Denmark,ETF
+EFNL,iShares MSCI Finland,ETF
+IGE,iShares North American Natural,ETF
+IYE,iShares US Energy,ETF
+VDE,Vanguard Energy,ETF
+FENY,Fidelity MSCI Energy,ETF
+IYF,iShares US Financials,ETF
+VFH,Vanguard Financials,ETF
+KBE,SPDR S&P Bank,ETF
+KRE,SPDR S&P Regional Banking,ETF
+IAI,iShares US Broker-Dealers,ETF
+IYG,iShares US Financial Services,ETF
+KBWB,Invesco KBW Bank,ETF
+IAT,iShares US Regional Banks,ETF
+PXJ,Invesco Dynamic Energy,ETF
+IEO,iShares US Oil & Gas Exploration,ETF
+IEZ,iShares US Oil Equipment,ETF
+XES,SPDR S&P Oil & Gas Equipment,ETF
+XOP,SPDR S&P Oil & Gas Exploration,ETF
+OIH,VanEck Oil Services,ETF
+AMLP,Alerian MLP,ETF
+AMJ,JPMorgan Alerian MLP,ETF
+MLPA,Global X MLP,ETF
+MLPX,Global X MLP & Energy,ETF
+ENFR,Alerian Energy Infrastructure,ETF
+IGV,iShares Expanded Tech-Software,ETF
+SKYY,First Trust Cloud Computing,ETF
+WCLD,WisdomTree Cloud Computing,ETF
+CLOU,Global X Cloud Computing,ETF
+HACK,ETFMG Prime Cyber Security,ETF
+CIBR,First Trust NASDAQ Cybersecurity,ETF
+BUG,Global X Cybersecurity,ETF
+IHAK,iShares Cybersecurity and Tech,ETF
+FINX,Global X FinTech,ETF
+ARKF,ARK Fintech Innovation,ETF
+IPAY,ETFMG Prime Mobile Payments,ETF
+TPAY,Themes US Cash Flow Kings,ETF
+BOTZ,Global X Robotics & AI,ETF
+ROBO,ROBO Global Robotics and Automation,ETF
+IRBO,iShares Robotics and AI,ETF
+AIQ,Global X AI & Technology,ETF
+LRNZ,TrueShares Technology AI and Deep,ETF
+QTEC,First Trust NASDAQ-100 Technology,ETF
+FTEC,Fidelity MSCI Information Tech,ETF
+VGT,Vanguard Information Technology,ETF
+IYW,iShares US Technology,ETF
+SOXX,iShares Semiconductor,ETF
+SMH,VanEck Semiconductor,ETF
+PSI,Invesco Dynamic Semiconductors,ETF
+XSD,SPDR S&P Semiconductor,ETF
+SOXL,Direxion Daily Semiconductor Bull,ETF
+SOXS,Direxion Daily Semiconductor Bear,ETF
+USD,ProShares Ultra Semiconductors,ETF
+SSG,ProShares UltraShort Semiconductors,ETF
+IGM,iShares Expanded Tech Sector,ETF
+IXN,iShares Global Tech,ETF
+IYZ,iShares US Telecommunications,ETF
+VOX,Vanguard Communication Services,ETF
+XLC,Communication Services Select,ETF
+IHI,iShares US Medical Devices,ETF
+IHF,iShares US Healthcare Providers,ETF
+IHE,iShares US Pharmaceuticals,ETF
+IBB,iShares Biotechnology,ETF
+XBI,SPDR S&P Biotech,ETF
+BBH,VanEck Biotech,ETF
+FBT,First Trust NYSE Arca Biotech,ETF
+LABU,Direxion Daily S&P Biotech Bull,ETF
+LABD,Direxion Daily S&P Biotech Bear,ETF
+XLV,Health Care Select Sector,ETF
+VHT,Vanguard Health Care,ETF
+FHLC,Fidelity MSCI Health Care,ETF
+IXJ,iShares Global Healthcare,ETF
+IYH,iShares US Healthcare,ETF
+VCR,Vanguard Consumer Discretionary,ETF
+XLY,Consumer Discretionary Select,ETF
+FDIS,Fidelity MSCI Consumer Discretionary,ETF
+IYC,iShares US Consumer Discretionary,ETF
+RTH,VanEck Retail,ETF
+XRT,SPDR S&P Retail,ETF
+IBUY,Amplify Online Retail,ETF
+ONLN,ProShares Online Retail,ETF
+CLIX,ProShares Long Online/Short Stores,ETF
+EMTY,ProShares Decline of Retail Store,ETF
+XHB,SPDR S&P Homebuilders,ETF
+ITB,iShares US Home Construction,ETF
+PKB,Invesco Dynamic Building,ETF
+NAIL,Direxion Daily Homebuilders Bull,ETF
+XLP,Consumer Staples Select Sector,ETF
+VDC,Vanguard Consumer Staples,ETF
+FSTA,Fidelity MSCI Consumer Staples,ETF
+IYK,iShares US Consumer Staples,ETF
+PBJ,Invesco Dynamic Food & Beverage,ETF
+MOO,VanEck Agribusiness,ETF
+VEGI,iShares MSCI Global Agriculture,ETF
+XLI,Industrial Select Sector,ETF
+VIS,Vanguard Industrials,ETF
+FIDU,Fidelity MSCI Industrials,ETF
+IYJ,iShares US Industrials,ETF
+XAR,SPDR S&P Aerospace & Defense,ETF
+ITA,iShares US Aerospace & Defense,ETF
+PPA,Invesco Aerospace & Defense,ETF
+DFEN,Direxion Daily Aerospace & Defense,ETF
+IYT,iShares Transportation Average,ETF
+XTN,SPDR S&P Transportation,ETF
+FTXR,First Trust Nasdaq Transportation,ETF
+AIRR,First Trust RBA American Industrial,ETF
+IYM,iShares US Basic Materials,ETF
+XLB,Materials Select Sector,ETF
+VAW,Vanguard Materials,ETF
+FMAT,Fidelity MSCI Materials,ETF
+XME,SPDR S&P Metals & Mining,ETF
+PICK,iShares MSCI Global Metals & Mining,ETF
+REMX,VanEck Rare Earth/Strategic Metals,ETF
+LIT,Global X Lithium & Battery Tech,ETF
+BATT,Amplify Lithium & Battery Tech,ETF
+DRIV,Global X Autonomous & Electric,ETF
+IDRV,iShares Self-Driving EV and Tech,ETF
+KARS,KraneShares Electric Vehicles,ETF
+CARZ,First Trust NASDAQ Global Auto,ETF
+XLRE,Real Estate Select Sector,ETF
+VNQ,Vanguard Real Estate,ETF
+IYR,iShares US Real Estate,ETF
+SCHH,Schwab US REIT,ETF
+USRT,iShares Core US REIT,ETF
+RWR,SPDR Dow Jones REIT,ETF
+ICF,iShares Cohen & Steers REIT,ETF
+FREL,Fidelity MSCI Real Estate,ETF
+REZ,iShares Residential and Multisector,ETF
+HOMZ,Hoya Capital Housing,ETF
+INDS,Pacer Benchmark Industrial Real,ETF
+REET,iShares Global REIT,ETF
+RWO,SPDR Dow Jones Global Real Estate,ETF
+VNQI,Vanguard Global ex-US Real Estate,ETF
+IFGL,iShares International Developed Real,ETF
+XLU,Utilities Select Sector,ETF
+VPU,Vanguard Utilities,ETF
+FUTY,Fidelity MSCI Utilities,ETF
+IDU,iShares US Utilities,ETF
+PUI,Invesco DWA Utilities Momentum,ETF
+TAN,Invesco Solar,ETF
+ICLN,iShares Global Clean Energy,ETF
+QCLN,First Trust NASDAQ Clean Edge,ETF
+PBW,Invesco WilderHill Clean Energy,ETF
+ACES,ALPS Clean Energy,ETF
+FAN,First Trust Global Wind Energy,ETF
+PZD,Invesco Cleantech,ETF
+SMOG,VanEck Low Carbon Energy,ETF
+GRID,First Trust NASDAQ Clean Edge,ETF
+LIT,Global X Lithium & Battery Tech,ETF
+BATT,Amplify Lithium & Battery Technology,ETF
+ESGU,iShares MSCI USA ESG Select,ETF
+USSG,Xtrackers MSCI USA ESG Leaders,ETF
+DSI,iShares MSCI KLD 400 Social,ETF
+ESGD,iShares MSCI EAFE ESG Select,ETF
+ESGV,Vanguard ESG US Stock,ETF
+ESGE,iShares MSCI EM ESG Select,ETF
+SDG,iShares MSCI Global Impact,ETF
+CRBN,iShares MSCI ACWI Low Carbon,ETF
+LOWC,SPDR MSCI ACWI Low Carbon,ETF
+VOTE,Engine No. 1 Transform 500,ETF
+NULG,Nuveen ESG Large-Cap Growth,ETF
+NULV,Nuveen ESG Large-Cap Value,ETF
+NUMG,Nuveen ESG Mid-Cap Growth,ETF
+NUMV,Nuveen ESG Mid-Cap Value,ETF
+NUSC,Nuveen ESG Small-Cap,ETF
+SUSA,iShares MSCI USA ESG Select,ETF
+SUSL,iShares ESG MSCI USA Leaders,ETF
+ESGN,Columbia Sustainable US Equity,ETF
+KNG,CBOE Vest S&P 500 Dividend,ETF
+DIV,Global X SuperDividend,ETF
+FDL,First Trust Morningstar Dividend,ETF
+SDIV,Global X SuperDividend,ETF
+PEY,Invesco High Yield Equity Dividend,ETF
+HDV,iShares Core High Dividend,ETF
+VYMI,Vanguard International High Div,ETF
+IDV,iShares International Select Div,ETF
+DEM,WisdomTree Emerging Markets High,ETF
+DTH,WisdomTree International High Div,ETF
+RDIV,Invesco S&P Ultra Dividend Revenue,ETF
+PID,Invesco International Dividend,ETF
+QDIV,Global X S&P 500 Quality Dividend,ETF
+WDIV,SPDR S&P Global Dividend,ETF
+DWX,SPDR S&P International Dividend,ETF
+PGF,Invesco Financial Preferred,ETF
+PFF,iShares Preferred and Income,ETF
+PFFD,Global X US Preferred,ETF
+PSK,SPDR Wells Fargo Preferred Stock,ETF
+PGX,Invesco Preferred,ETF
+UTEN,Infracap Utility Preferred,ETF
+FPE,First Trust Preferred Securities,ETF
+VRP,Invesco Variable Rate Preferred,ETF
+EPRF,Innovator S&P Investment Grade,ETF
+PFXF,VanEck Preferred Securities ex,ETF
+SPFF,Global X SuperIncome Preferred,ETF
+RPV,Invesco S&P 500 Pure Value,ETF
+RPG,Invesco S&P 500 Pure Growth,ETF
+IWD,iShares Russell 1000 Value,ETF
+IWF,iShares Russell 1000 Growth,ETF
+IWO,iShares Russell 2000 Growth,ETF
+IWN,iShares Russell 2000 Value,ETF
+IWP,iShares Russell Mid-Cap Growth,ETF
+IWS,iShares Russell Mid-Cap Value,ETF
+VLUE,iShares MSCI USA Value Factor,ETF
+SIZE,iShares MSCI USA Size Factor,ETF
+MTUM,iShares MSCI USA Momentum Factor,ETF
+QUAL,iShares MSCI USA Quality Factor,ETF
+USMV,iShares MSCI USA Min Vol Factor,ETF
+LRGF,iShares US Equity Factor,ETF
+SPHQ,Invesco S&P 500 Quality,ETF
+DGRW,WisdomTree US Quality Dividend,ETF
+FVAL,Fidelity Value Factor,ETF
+FQAL,Fidelity Quality Factor,ETF
+SVAL,iShares US Small-Cap Value Factor,ETF
+VFMV,Vanguard US Minimum Volatility,ETF
+EEMV,iShares MSCI Emerging Markets Min,ETF
+EFAV,iShares MSCI EAFE Min Vol Factor,ETF
+SPLV,Invesco S&P 500 Low Volatility,ETF
+XMLV,Invesco S&P MidCap Low Volatility,ETF
+XSLV,Invesco S&P SmallCap Low Volatility,ETF
+FDLO,Fidelity Low Volatility Factor,ETF
+FDN,First Trust Dow Jones Internet,ETF
+PNQI,Invesco NASDAQ Internet,ETF
+SOCL,Global X Social Media,ETF
+WCLD,WisdomTree Cloud Computing,ETF
+EMQQ,EMQQ Emerging Markets Internet,ETF
+ARKW,ARK Next Generation Internet,ETF
+KRMA,Global X Conscious Companies,ETF
+GAMR,ETFMG Video Game Tech,ETF
+ESPO,VanEck Video Gaming and eSports,ETF
+HERO,Global X Video Games & Esports,ETF
+NERD,Roundhill BITKRAFT Esports,ETF
+UFO,Procure Space,ETF
+ROKT,SPDR S&P Kensho Final Frontiers,ETF
+JETS,US Global Jets,ETF
+AWAY,ETFMG Travel Tech,ETF
+PEJ,Invesco Dynamic Leisure,ETF
+CRUZ,Defiance Hotel Airline and Cruise,ETF
+BOAT,SonicShares Global Shipping,ETF
+SEA,US Global Sea to Sky Cargo,ETF
+SHPP,Breakwave Dry Bulk Shipping,ETF
+BDRY,Breakwave Dry Bulk Shipping,ETF
+DSEA,Themes International Shipping,ETF
+ALTY,Global X Alternative Income,ETF
+MORT,VanEck Mortgage REIT Income,ETF
+REM,iShares Mortgage Real Estate,ETF
+KBWY,Invesco KBW Premium Yield Equity,ETF
+CWB,SPDR Bloomberg Convertible,ETF
+ICVT,iShares Convertible Bond,ETF
+TAWK,SPDR Equity Convertible,ETF
+KCCA,KraneShares California Carbon,ETF
+KRBN,KraneShares Global Carbon Strategy,ETF
+GRN,iShares Global Green Bond,ETF
+GRNB,VanEck Green Bond,ETF
+FLRN,SPDR Bloomberg Investment Grade,ETF
+FLOT,iShares Floating Rate Bond,ETF
+FLTR,VanEck Investment Grade Floating,ETF
+TFLO,iShares Treasury Floating Rate,ETF
+USFR,WisdomTree Floating Rate Treasury,ETF
+IBDP,iShares iBonds Dec 2023 Term Corp,ETF
+IBDQ,iShares iBonds Dec 2024 Term Corp,ETF
+IBDR,iShares iBonds Dec 2025 Term Corp,ETF
+IBDS,iShares iBonds Dec 2026 Term Corp,ETF
+IBDT,iShares iBonds Dec 2027 Term Corp,ETF
+IBDU,iShares iBonds Dec 2028 Term Corp,ETF
+IBDV,iShares iBonds Dec 2029 Term Corp,ETF
+IBDW,iShares iBonds Dec 2030 Term Corp,ETF
+IBTA,iShares iBonds Dec 2023 Term Tres,ETF
+IBTB,iShares iBonds Dec 2024 Term Tres,ETF
+IBTC,iShares iBonds Dec 2025 Term Tres,ETF
+IBTD,iShares iBonds Dec 2026 Term Tres,ETF
+IBTE,iShares iBonds Dec 2027 Term Tres,ETF
+IBTF,iShares iBonds Dec 2028 Term Tres,ETF
+IBTG,iShares iBonds Dec 2029 Term Tres,ETF
+IBTH,iShares iBonds Dec 2030 Term Tres,ETF
+SPHY,SPDR Portfolio High Yield Bond,ETF
+USHY,iShares Broad USD High Yield Corp,ETF
+SHYD,VanEck Short High Yield Muni,ETF
+HYMB,SPDR Nuveen S&P High Yield Muni,ETF
+HYD,VanEck High Yield Muni,ETF
+VWEHX,Vanguard High-Yield Tax-Exempt,ETF
+VTEB,Vanguard Tax-Exempt Bond,ETF
+MUB,iShares National Muni Bond,ETF
+TFI,SPDR Nuveen Bloomberg Municipal,ETF
+MMIT,IQ MacKay Municipal Insured,ETF
+MMIN,IQ MacKay Municipal Intermediate,ETF
+CMF,iShares California Muni Bond,ETF
+NYF,iShares New York Muni Bond,ETF
+PWZ,Invesco California AMT-Free Muni,ETF
+PZA,Invesco National AMT-Free Muni,ETF
+IBMK,iShares iBonds Dec 2023 Term Muni,ETF
+IBML,iShares iBonds Dec 2024 Term Muni,ETF
+IBMM,iShares iBonds Dec 2025 Term Muni,ETF
+IBMN,iShares iBonds Dec 2026 Term Muni,ETF
+IBMO,iShares iBonds Dec 2027 Term Muni,ETF
+IBMP,iShares iBonds Dec 2028 Term Muni,ETF
+IBMQ,iShares iBonds Dec 2029 Term Muni,ETF
+IBMR,iShares iBonds Dec 2030 Term Muni,ETF
+BSMR,Invesco BulletShares 2023 Muni,ETF
+BSMS,Invesco BulletShares 2024 Muni,ETF
+BSMT,Invesco BulletShares 2025 Muni,ETF
+BSMU,Invesco BulletShares 2026 Muni,ETF
+BSMV,Invesco BulletShares 2027 Muni,ETF
+BSMW,Invesco BulletShares 2028 Muni,ETF
+BSMX,Invesco BulletShares 2029 Muni,ETF
+BSMY,Invesco BulletShares 2030 Muni,ETF
+BSCR,Invesco BulletShares 2023 Corp,ETF
+BSCS,Invesco BulletShares 2024 Corp,ETF
+BSCT,Invesco BulletShares 2025 Corp,ETF
+BSCU,Invesco BulletShares 2026 Corp,ETF
+BSCV,Invesco BulletShares 2027 Corp,ETF
+BSCW,Invesco BulletShares 2028 Corp,ETF
+BSCX,Invesco BulletShares 2029 Corp,ETF
+BSCY,Invesco BulletShares 2030 Corp,ETF
+BSCZ,Invesco BulletShares 2031 Corp,ETF
+TQQQ,ProShares UltraPro QQQ,ETF
+SQQQ,ProShares UltraPro Short QQQ,ETF
+UPRO,ProShares UltraPro S&P500,ETF
+SPXU,ProShares UltraPro Short S&P500,ETF
+TMF,Direxion Daily 20+ Year Treasury Bull,ETF
+TMV,Direxion Daily 20+ Year Treasury Bear,ETF
+TNA,Direxion Daily Small Cap Bull 3X,ETF
+TZA,Direxion Daily Small Cap Bear 3X,ETF
+UDOW,ProShares UltraPro Dow30,ETF
+SDOW,ProShares UltraPro Short Dow30,ETF
+FAS,Direxion Daily Financial Bull 3X,ETF
+FAZ,Direxion Daily Financial Bear 3X,ETF
+TECL,Direxion Daily Technology Bull 3X,ETF
+TECS,Direxion Daily Technology Bear 3X,ETF
+CURE,Direxion Daily Healthcare Bull 3X,ETF
+RXD,ProShares UltraPro Short Russell2000,ETF
+UWM,ProShares Ultra Russell2000,ETF
+TWM,ProShares UltraShort Russell2000,ETF
+URTY,ProShares UltraPro Russell2000,ETF
+SRTY,ProShares UltraPro Short Russell2000,ETF
+SSO,ProShares Ultra S&P500,ETF
+SDS,ProShares UltraShort S&P500,ETF
+DDM,ProShares Ultra Dow30,ETF
+DXD,ProShares UltraShort Dow30,ETF
+MVV,ProShares Ultra MidCap400,ETF
+MZZ,ProShares UltraShort MidCap400,ETF
+SAA,ProShares Ultra SmallCap600,ETF
+SDD,ProShares UltraShort SmallCap600,ETF
+UYG,ProShares Ultra Financials,ETF
+SKF,ProShares UltraShort Financials,ETF
+ROM,ProShares Ultra Technology,ETF
+REW,ProShares UltraShort Technology,ETF
+UCC,ProShares Ultra Consumer Services,ETF
+SCC,ProShares UltraShort Consumer Services,ETF
+UGE,ProShares Ultra Consumer Goods,ETF
+SZK,ProShares UltraShort Consumer Goods,ETF
+RXL,ProShares Ultra Health Care,ETF
+RXD,ProShares UltraShort Health Care,ETF
+UYM,ProShares Ultra Basic Materials,ETF
+SMN,ProShares UltraShort Basic Materials,ETF
+UXI,ProShares Ultra Industrials,ETF
+SIJ,ProShares UltraShort Industrials,ETF
+DIG,ProShares Ultra Oil & Gas,ETF
+DUG,ProShares UltraShort Oil & Gas,ETF
+UPW,ProShares Ultra Utilities,ETF
+SDP,ProShares UltraShort Utilities,ETF
+URE,ProShares Ultra Real Estate,ETF
+SRS,ProShares UltraShort Real Estate,ETF
+MIDU,Direxion Daily Mid Cap Bull 3X,ETF
+MIDZ,Direxion Daily Mid Cap Bear 3X,ETF
+WANT,Direxion Daily Consumer Discretionary,ETF
+STPZ,Direxion Daily Consumer Staples Bear,ETF
+DUSL,Direxion Daily Industrials Bull 3X,ETF
+PILL,Direxion Daily Pharmaceutical & Medical,ETF
+WEBS,Direxion Daily Dow Jones Internet Bull,ETF
+WEBL,Direxion Daily Dow Jones Internet Bull,ETF
+RETL,Direxion Daily Retail Bull 3X,ETF
+UMDD,ProShares UltraPro MidCap400,ETF
+SMDD,ProShares UltraPro Short MidCap400,ETF
+UDPIX,ProShares UltraPro Short Dow30,ETF
+SPUU,Direxion Daily S&P 500 Bull 2X Shares,ETF
+SPDN,Direxion Daily S&P 500 Bear 1X Shares,ETF
+HIBL,Direxion Daily S&P 500 High Beta Bull,ETF
+HIBS,Direxion Daily S&P 500 High Beta Bear,ETF
+NRGU,MicroSectors US Big Oil Index 3X,ETF
+NRGD,MicroSectors US Big Oil Index -3X,ETF
+DPST,Direxion Daily Regional Banks Bull 3X,ETF
+DMDV,AAM S&P Developed Markets High Div,ETF
