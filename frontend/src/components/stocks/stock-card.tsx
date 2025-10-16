@@ -82,6 +82,42 @@ export function StockCard({
                   {formatPercent(stock.changePercent)}
                 </div>
               </div>
+              
+              {/* Add to Watchlist Button */}
+              <motion.button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleWatchlistToggle();
+                }}
+                className={cn(
+                  "absolute top-4 right-4 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg",
+                  isInWatchlist 
+                    ? "bg-success-500 text-white hover:bg-success-600" 
+                    : "bg-white text-slate-600 hover:bg-primary hover:text-white border border-slate-200"
+                )}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.3, duration: 0.3 }}
+              >
+                {isInWatchlist ? (
+                  <motion.div
+                    initial={{ rotate: -90, scale: 0 }}
+                    animate={{ rotate: 0, scale: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <Star className="w-4 h-4 fill-current" />
+                  </motion.div>
+                ) : (
+                  <motion.div
+                    whileHover={{ rotate: 90 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <Plus className="w-4 h-4" />
+                  </motion.div>
+                )}
+              </motion.button>
             </div>
           </CardContent>
         </Card>
