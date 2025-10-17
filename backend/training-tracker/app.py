@@ -344,6 +344,8 @@ def start_training():
                 logger.info("ML service training started")
             else:
                 logger.info("Using simulated training (ML service not available)")
+        except requests.exceptions.ConnectionError:
+            logger.info("ML service not running - using simulated training")
         except Exception as e:
             logger.info(f"Using simulated training: {e}")
         

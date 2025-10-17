@@ -35,13 +35,31 @@ def check_python_deps():
     """Check if required Python packages are available"""
     print("📋 Checking Python dependencies...")
     
-    required_packages = ['flask', 'requests', 'pandas', 'numpy', 'scikit-learn']
+    # Core packages for training tracker
+    required_packages = ['flask', 'flask-socketio', 'requests', 'pandas', 'numpy', 'scikit-learn']
+    
+    # Additional ML packages needed for analytical model
+    ml_packages = ['pandas-ta', 'yfinance', 'matplotlib']
+    
     missing_packages = []
     
+    # Check core packages
     for package in required_packages:
         try:
             if package == 'scikit-learn':
                 __import__('sklearn')
+            elif package == 'flask-socketio':
+                __import__('flask_socketio')
+            else:
+                __import__(package)
+        except ImportError:
+            missing_packages.append(package)
+    
+    # Check ML packages
+    for package in ml_packages:
+        try:
+            if package == 'pandas-ta':
+                __import__('pandas_ta')
             else:
                 __import__(package)
         except ImportError:
@@ -51,12 +69,18 @@ def check_python_deps():
         print(f"❌ Missing packages: {', '.join(missing_packages)}")
         print("   Installing missing packages...")
         try:
-            subprocess.run([sys.executable, '-m', 'pip', 'install'] + missing_packages, 
-                         check=True, capture_output=True)
-            print("✅ Packages installed successfully")
-        except subprocess.CalledProcessError:
-            print("⚠️  Could not install packages automatically")
+            # Install packages one by one to handle potential conflicts
+            for package in missing_packages:
+                print(f"   Installing {package}...")
+                result = subprocess.run([sys.executable, '-m', 'pip', 'install', package], 
+                                     capture_output=True, text=True)
+                if result.returncode != 0:
+                    print(f"   ⚠️  Failed to install {package}: {result.stderr}")
+            print("✅ Package installation completed")
+        except Exception as e:
+            print(f"⚠️  Could not install packages automatically: {e}")
             print(f"   Please run: pip install {' '.join(missing_packages)}")
+            print("   Note: pandas-ta may require additional setup")
             return False
     else:
         print("✅ All required packages available")
